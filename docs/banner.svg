@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="t d">
+  <title id="t">Familiar Campaign Prep</title>
+  <desc id="d">Turn a premade adventure into a Foundry VTT world your Familiar AI game master runs faithfully, session after session.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1a24"/>
+      <stop offset="0.6" stop-color="#173246"/>
+      <stop offset="1" stop-color="#24506a"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f8fa" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#f4f8fa" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="peak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f1f6"/>
+      <stop offset="1" stop-color="#9fbfd1"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <rect width="1280" height="420" fill="url(#sky)"/>
+  <!-- distant peaks of Icewind Dale -->
+  <g transform="translate(0,125)">
+  <path d="M0 330 L120 250 L190 290 L300 190 L380 260 L470 215 L560 290 L660 230 L760 300 L860 210 L950 275 L1040 200 L1140 280 L1280 225 L1280 420 L0 420 Z" fill="#1d3e53" opacity="0.9"/>
+  <path d="M0 370 L160 320 L330 360 L520 305 L700 355 L900 315 L1080 350 L1280 320 L1280 420 L0 420 Z" fill="#0f2635"/>
+  </g>
+  <!-- snow -->
+  <g fill="#ffffff" filter="url(#soft)">
+    <circle cx="60" cy="40" r="2.2" opacity=".7"/><circle cx="180" cy="95" r="1.6" opacity=".6"/><circle cx="260" cy="30" r="2.4" opacity=".5"/>
+    <circle cx="410" cy="70" r="1.8" opacity=".7"/><circle cx="520" cy="25" r="2" opacity=".5"/><circle cx="640" cy="88" r="1.4" opacity=".6"/>
+    <circle cx="760" cy="40" r="2.3" opacity=".6"/><circle cx="890" cy="78" r="1.7" opacity=".7"/><circle cx="1010" cy="34" r="2.1" opacity=".5"/>
+    <circle cx="1130" cy="90" r="1.5" opacity=".6"/><circle cx="1230" cy="45" r="2.4" opacity=".7"/><circle cx="1190" cy="150" r="1.6" opacity=".5"/>
+    <circle cx="90" cy="160" r="1.4" opacity=".5"/><circle cx="700" cy="150" r="1.2" opacity=".4"/><circle cx="350" cy="140" r="1.5" opacity=".4"/>
+  </g>
+  <!-- title -->
+  <text x="72" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#f3f8fb" letter-spacing="1">Familiar Campaign Prep</text>
+  <text x="74" y="160" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#bcd6e4">Premade adventure in. A Foundry world your AI GM runs faithfully, session after session.</text>
+  <!-- pipeline cards -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+    <g transform="translate(72,206)">
+      <rect width="300" height="112" rx="14" fill="url(#card)" stroke="#9cc3d8" stroke-opacity=".45"/>
+      <path d="M24 30 h34 a8 8 0 0 1 8 8 v42 a8 8 0 0 0 -8 -8 h-34 z M74 30 h34 v42 h-34 a8 8 0 0 0 -8 8 v-42 a8 8 0 0 1 8 -8 z" fill="none" stroke="#e7f1f6" stroke-width="3" stroke-linejoin="round"/>
+      <text x="128" y="50" font-size="21" font-weight="700" fill="#f3f8fb">The book</text>
+      <text x="128" y="76" font-size="15" fill="#bcd6e4">PDF, module or notes,</text>
+      <text x="128" y="96" font-size="15" fill="#bcd6e4">imported word for word</text>
+    </g>
+    <path d="M384 262 h42 m-12 -10 l12 10 l-12 10" stroke="#f0b35a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(440,206)">
+      <rect width="320" height="112" rx="14" fill="url(#card)" stroke="#9cc3d8" stroke-opacity=".45"/>
+      <g fill="none" stroke="#e7f1f6" stroke-width="3" stroke-linejoin="round">
+        <rect x="24" y="26" width="52" height="62" rx="5"/><rect x="34" y="20" width="52" height="62" rx="5" opacity=".55"/>
+        <path d="M34 44 h30 M34 56 h30 M34 68 h20"/>
+      </g>
+      <text x="108" y="50" font-size="21" font-weight="700" fill="#f3f8fb">Foundry journals</text>
+      <text x="108" y="76" font-size="15" fill="#bcd6e4">Start Here · Source · Prep,</text>
+      <text x="108" y="96" font-size="15" fill="#bcd6e4">maps, actors, Table Rules</text>
+    </g>
+    <path d="M772 262 h42 m-12 -10 l12 10 l-12 10" stroke="#f0b35a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(828,206)">
+      <rect width="380" height="112" rx="14" fill="url(#card)" stroke="#f0b35a" stroke-opacity=".7"/>
+      <g fill="none" stroke="#f0b35a" stroke-width="3" stroke-linejoin="round">
+        <path d="M56 18 L84 34 L84 74 L56 90 L28 74 L28 34 Z"/>
+        <path d="M56 34 L74 66 L38 66 Z"/>
+        <path d="M56 18 L56 34 M84 34 L74 66 M28 34 L38 66 M38 66 L28 74 M74 66 L84 74 M38 66 L56 90 M74 66 L56 90"/>
+      </g>
+      <text x="56" y="61" text-anchor="middle" font-size="12" font-weight="700" fill="#f0b35a">20</text>
+      <text x="108" y="50" font-size="21" font-weight="700" fill="#f3f8fb">An AI GM that stays on script</text>
+      <text x="108" y="76" font-size="15" fill="#bcd6e4">reads the notes, plays fair,</text>
+      <text x="108" y="96" font-size="15" fill="#bcd6e4">saves its place, picks back up</text>
+    </g>
+  </g>
+  <text x="1208" y="396" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8fb3c6">a skill for Claude Code, Codex and other AI assistants · Foundry VTT + Familiar</text>
+</svg>

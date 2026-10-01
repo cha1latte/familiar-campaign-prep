@@ -1,0 +1,4 @@
+interface:
+  display_name: "Foundry + Familiar Campaigns"
+  short_description: "Set up premade adventures in Foundry and keep the AI GM faithful, session after session"
+  default_prompt: "Use $foundry-familiar-campaigns to set up this adventure in Foundry with Familiar, preserving the original text, our table's preferences and continuity."
