@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="Familiar Campaign Prep: premade adventure in, a Foundry world your AI GM runs faithfully" width="100%">
+  <img src="docs/banner.svg?v=2" alt="Familiar Campaign Prep: premade adventure in, a Foundry world your AI GM runs faithfully" width="100%">
 </p>
 
 <p align="center">
