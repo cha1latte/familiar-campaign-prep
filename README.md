@@ -31,14 +31,13 @@ When you stop for the night, the AI GM saves where you are. Next time, *"hi, let
 ## How it works
 
 ```mermaid
-flowchart LR
-    A["📖 Your adventure<br/>PDF · module · notes"] -->|"text checked<br/>against the pages"| B["📗 Source journal"]
-    B --> C["📘 Prep<br/>NPCs · clues · fights"]
-    B --> D["🗺️ Scenes & actors<br/>from the book"]
-    C --> E["📕 Start Here<br/>Runner Guide + Pickup"]
+flowchart TD
+    A["📖 Your adventure: PDF, module or notes"] -->|"imported word for word,<br/>checked against the pages"| B["📗 Source journal"]
+    B --> C["📘 Prep: NPCs, clues, fights"]
+    B --> D["🗺️ Scenes and actors from the book"]
+    C --> E["📕 Start Here: Runner Guide + Pickup"]
     D --> E
-    E -->|"short Table Rules<br/>point here"| F(["🎲 Familiar AI GM"])
-    F -->|"end of session:<br/>saves the Pickup"| E
+    E <-->|"reads it every session,<br/>saves the Pickup when you stop"| F(["🎲 Familiar AI GM"])
 ```
 
 Your assistant does the prep with this skill. Familiar's AI GM doesn't need the skill: everything it needs ends up inside Foundry, where it can read it.
@@ -74,7 +73,7 @@ Your assistant does the prep with this skill. Familiar's AI GM doesn't need the 
 
 The skill was run end to end in a real Foundry 14 world. It used a free official solo adventure (*Frozen Offerings*, from *Dragon+* 34), with Familiar's own AI GM playing it from the player's side.
 
-| | |
+| What we tested | What happened |
 |---|---|
 | 📗 **Source import** | 14 / 14 pages matched the PDF word for word. Checking against the page images caught three layout errors that a word count misses |
 | 🧝 **Stat blocks** | 13 mismatches found on read-back (dnd5e silently drops some fields); fixed until every number matched the book |
