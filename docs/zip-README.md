@@ -39,6 +39,8 @@ No assistant skill support? Put the folder somewhere your assistant can read, an
 | *"The AI said the dragon had 3 heads. Why?"* | Traces that fact from the book to the reply and fixes the layer that broke |
 | *"Fix the cave map's walls."* | Just the scene work |
 
+**No adventure yet?** The companion skill Campaign Writer (github.com/cha1latte/campaign-writer) writes an original one from a single sentence, and this skill installs it.
+
 **Playing as a player, with the AI as GM?** Say so ("I'm the player, no spoilers"). The prep assistant then keeps secrets out of its replies to you, and out of anything you can see in Foundry.
 
 **Solo with Familiar's table chat** (you type `@familiar …` in Foundry chat)? The skill sets up the three things Familiar requires: your player account with your character *linked* to it, your token on an active opening scene, and you as Familiar's Solo Player. Without them Familiar politely refuses to play.
@@ -67,6 +69,7 @@ This version was run end to end, not just written. A real free solo adventure (*
 |---|---|
 | The AI GM doesn't seem to know the campaign | Ask your prep assistant to *"test the handoff"*; it checks the GM's tool receipts to see whether it actually reads the notes |
 | Familiar says "no character is linked" or "no token on the active scene" | Ask your prep assistant to *"set me up as the solo player"* |
+| The AI GM keeps talking about a different campaign | Switch *Table Chat* off and on in Familiar's settings (it keeps its own history), and ask your prep assistant to put an `ACTIVE CAMPAIGN` line first in the Table Rules |
 | My old Table Rules disappeared | Familiar replaces the whole text on each write. The skill merges and keeps a backup page; ask it to restore |
 | Players see a black map | Ask to *"check player vision on <scene>"* |
 | Notes contradict what happened at the table | Ask for a *"drift audit"*. Played events are kept, and the notes get fixed |

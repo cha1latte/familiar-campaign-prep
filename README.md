@@ -67,6 +67,8 @@ Your assistant does the prep with this skill. Familiar's AI GM doesn't need the 
 | *"Test the handoff."* | Checks Familiar's own tool receipts to confirm the AI GM really reads the notes |
 | *"The AI said the dragon has three heads. Why?"* | Traces that fact from the book to the reply and fixes the layer that broke |
 
+**No adventure yet? Get one written.** The companion skill **[Campaign Writer](https://github.com/cha1latte/campaign-writer)** turns *"a pirate campaign for five new level-1s"* or *"teach me physics through D&D"* into a full adventure (GM book, maps, handouts, pregens) with a ready-made Foundry hand-off. This skill then installs it for Familiar, exactly like a published adventure.
+
 **Playing, not running?** Tell it *"I'm the player, no spoilers"*. It keeps secrets out of its replies to you and out of anything you can see in Foundry.
 
 ## Tested for real, not just written
@@ -135,6 +137,7 @@ foundry-familiar-campaigns/
 | "No character is linked" / "no token on the active scene" | *"Set me up as the solo player"* |
 | "Familiar didn't have an answer for that", every time | Your chat model. Try another in Familiar's settings |
 | Tools time out or say disconnected | Keep the GM's Foundry tab in its own window; background tabs get put to sleep |
+| The AI GM keeps talking about a different campaign | Table chat keeps its own history. Switch *Table Chat* off and on in Familiar's settings, and start the Table Rules with an `ACTIVE CAMPAIGN …` line. Or give each campaign its own world |
 | My old Table Rules vanished | Familiar replaces the whole text on each write. The skill merges and keeps a backup; ask it to restore |
 
 ## Changelog

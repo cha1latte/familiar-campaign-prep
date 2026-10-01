@@ -36,7 +36,11 @@ Optional single lines, added only if the table wants them:
 4. Write it with `update-familiar-setting { key: "customInstructions", value }`. It's a `gm-confirm` setting, so a GM may need to click *Yes* in the Foundry tab, and the result says `confirmed`.
 5. Read it back with `get-world-info`: `tableInstructions` must match what you wrote, end to end.
 
-If several campaigns share one world, give each its own short block, name the active one first, and point each at its own Start Here journal.
+If several campaigns share one world, give each its own short block, name the active one first, and point each at its own Start Here journal. Better still, give each campaign its own world: Familiar also feeds the AI GM the world's campaign memories and table-chat history, and both point at whichever campaign was played last. When you switch a world to another campaign (tested live):
+
+1. Start the Table Rules with an explicit line: `ACTIVE CAMPAIGN in this world: <Title>. The solo player is "<user>", playing <PC>. <Other campaign> is PAUSED: never read its journals, never mention it, ignore its campaign memories and old chat.`
+2. Switch Table Chat off and on, to clear table chat's own turn history ([Familiar facts](familiar-facts.md#table-chat-keeps-its-own-history)). The GM panel's *New chat* doesn't do it.
+3. Run the handoff test below. Before these two steps, the AI GM answered as the old campaign; after them, it read the right Start Here and resumed from its Pickup.
 
 ## Proving the handoff
 

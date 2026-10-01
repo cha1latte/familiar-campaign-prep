@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.0 (2026-10-01)
+
+**New**
+- Table chat keeps its own turn history, separate from the GM's chat. Switching a world to another campaign now has a tested recipe: an `ACTIVE CAMPAIGN` first line in the Table Rules, then Table Chat off and on. *New chat* in the GM panel doesn't reset table chat. Found in a live test.
+- Installs packages from the companion skill [Campaign Writer](https://github.com/cha1latte/campaign-writer): its `foundry/handoff.md` and ready-made `foundry/pages.json`, including Teach-mode Table Rules and a Learning Tracker page.
+- Finding adventures points to Campaign Writer when the user wants an original adventure instead of a published one.
+
 ## 2.1.0 (2026-10-01)
 
 A full rebuild of the v1 portable skill, tested live in Foundry VTT 14 with Familiar 2.25.

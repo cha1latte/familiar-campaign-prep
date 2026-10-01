@@ -23,6 +23,8 @@ Record anything you skip, and why. "Imported the first chapter" is fine. Calling
 
 **Check the extraction.** For every section you'll use in the next session, compare the extracted text with the page image: reading order, numbers (DCs, HP, distances, quantities, times of day), names and choices. Spot-check the rest, and record which sections were checked by eye and which were only sampled. Text equality doesn't prove that layout, image content or section boundaries came through.
 
+**A Campaign Writer package** needs no extraction: its `book/*.md` chapters are the original text, and `foundry/pages.json` already holds them as Foundry-ready pages (one per node, tables as one line per row, read-aloud labelled). Push those pages as they are and read them back.
+
 ## Store it in Foundry
 
 One **Source** journal per adventure. One page per section, or per small run of numbered entries, kept well under the 50,000-character page limit (aim for 3,000–15,000 characters so a single read stays cheap). Name pages so they sort and can be found:

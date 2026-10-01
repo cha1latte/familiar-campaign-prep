@@ -1,6 +1,6 @@
 # Finding an adventure
 
-Use this when the user says something like "find me a one-player D&D adventure and set it up" and supplies nothing. The job is to find a **legitimately available** adventure that fits *their* table, get their pick, then install it.
+Use this when the user says something like "find me a one-player D&D adventure and set it up" and supplies nothing. If they'd rather have an original adventure written for them ("write me a pirate campaign", "teach my kid fractions with dragons"), that's the companion skill [Campaign Writer](https://github.com/cha1latte/campaign-writer); its package then installs through this skill. The job is to find a **legitimately available** adventure that fits *their* table, get their pick, then install it.
 
 ## 1. Read the table before searching
 
@@ -59,3 +59,4 @@ Then continue with [Source intake](source-intake.md).
 | **Party adventure run solo** | Plan a sidekick, companion NPC or level adjustment. Record it in *Adaptations* as a deliberate change. Check every fight for a solo character's action economy. |
 | **Foundry adventure module** | Import its compendium content (scenes, actors, journals) instead of rebuilding it. Still add Start Here, Prep and Table Rules. |
 | **Notes or homebrew** | Treat the user's notes as the source. Label anything new you author as new. |
+| **A Campaign Writer package** (has `campaign.json` and `foundry/handoff.md`) | Follow its `foundry/handoff.md`. Its book chapters are the Source; push the ready-made pages in `foundry/pages.json` instead of converting the markdown yourself (tables are already lists; read-aloud is labelled). Copy `build/maps/*-vtt.png` into Foundry's Data folder and create walls from `*-walls.json`. Teach-mode packages add Table Rules lines, a Runner Guide section and a *6 Learning Tracker* page to Start Here. |

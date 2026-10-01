@@ -27,6 +27,12 @@ Table chat's Solo Player refuses to play until each of these is true:
 
 Each table-chat turn leaves a **GM-only receipt** in Foundry chat: "Table chat — <user> · solo authority · N model calls", followed by the tools called (✓ get-journal…). That's your evidence for the handoff check. Read it with `get-recent-messages`.
 
+### Table chat keeps its own history
+
+Table chat (players' `@familiar …` turns, including the Solo Player's) keeps a **turn history of its own**, separate from the GM's built-in chat. Observed live: after a world's Table Rules were switched to a second campaign, the solo player's "hi, let's play" was answered as the old campaign ("this chat is currently hosting <old campaign>"), and the model recapped the old campaign's last fight. Neither the GM clicking *New chat* in the Familiar panel nor a player's `@familiar /new` reset it.
+
+What cleared it: switching **Table Chat off and on** in Familiar's settings (`update-familiar-setting { key: "tableChatEnabled", value: false }`, then `true`), which clears table-chat turn histories. Do this whenever the campaign in a world changes, and after big repairs to the prep. With the world's campaign memories and old chat still pointing at the other campaign, the AI GM also needed an explicit first line in the Table Rules (see [Runner setup](runner-setup.md#installing-it-safely)).
+
 ## What reaches the playing AI
 
 | Channel | What it carries | Limits |
