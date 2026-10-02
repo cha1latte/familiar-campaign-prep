@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1 (2026-10-02)
+
+- Installing a Campaign Writer package now says to follow its Teach style. Campaign Writer 1.1 packages come in **Stealth** (the player must never feel taught: GM-side Learning Tracker, no out-of-character debrief, an opt-in decoder) and **Open** (classroom) versions of the Table Rules and Runner Guide, and the installer should use the one the package ships.
+
 ## 2.2.0 (2026-10-01)
 
 **New**
