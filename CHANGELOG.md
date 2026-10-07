@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.2 (2026-10-07)
+
+- Familiar 2.26's **Automatic** image, music, sound-effect and playlist modes are permission for the AI GM, not triggers. An outside assistant (Claude, Codex) sees them only in `get-world-info`, and in a live session it ignored them: no picture, sound or new music unless the player asked. New section in `familiar-facts.md`, and a Media line in the Runner Guide template telling the runner to act on whatever is set to Automatic.
+
 ## 2.2.1 (2026-10-02)
 
 - Installing a Campaign Writer package now says to follow its Teach style. Campaign Writer 1.1 packages come in **Stealth** (the player must never feel taught: GM-side Learning Tracker, no out-of-character debrief, an opt-in decoder) and **Open** (classroom) versions of the Table Rules and Runner Guide, and the installer should use the one the package ships.

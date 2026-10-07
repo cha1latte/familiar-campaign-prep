@@ -1,6 +1,6 @@
 # Familiar facts for campaign prep
 
-Checked against **Familiar 2.25.0 on Foundry 14**, October 2026. Tool contracts change between versions. If a call is refused or a result doesn't match this page, believe the live tool description and the actual result. Use `get-server-diagnostics` to see the running version.
+Checked against **Familiar 2.25.0 on Foundry 14**, October 2026 (the automatic media modes section against 2.26.0). Tool contracts change between versions. If a call is refused or a result doesn't match this page, believe the live tool description and the actual result. Use `get-server-diagnostics` to see the running version.
 
 ## How the pieces fit
 
@@ -74,6 +74,16 @@ What cleared it: switching **Table Chat off and on** in Familiar's settings (`up
 - `send-chat-message` posts to Foundry chat. Enricher syntax such as `@UUID[...]` is neutralised, so write plain prose. Whispers go through `whisperTo`.
 - Generating a sound effect posts a public "AI Sound" card describing it. Don't generate spoiler-laden sounds while players are watching.
 - `get-recent-messages` reads the chat log (whispers you can see, too). Use it to check what the playing AI actually said.
+
+## Automatic media modes (Familiar 2.26)
+
+Checked against the 2.26.0 module code and one live session, October 2026.
+
+- Familiar's settings window has image, music, sound-effect and playlist modes (`imageCueMode`, `musicMode`, `sfxMode`, `ambienceMode`, plus `voiceCueMode` and `videoMode`) that can be set to **Automatic**. Automatic is **not a trigger**. It is permission text for whichever AI is GMing. Nothing appears unless that AI calls `generate-image`, `generate-music`, `generate-sound-effect` or `play-ambience`.
+- The built-in chat gets the permission text in its prompt. An **outside assistant** only sees it as fields in the `get-world-info` result, and `imageCueNote` sits beside `imageCueMode` with the image rules and cap (6 per 30 minutes, the GM's own requests included). Observed live: an outside Claude GM read those fields set to automatic and then played a whole session without one unprompted image, sound or music track. The [Runner Guide template](journal-layout.md#0-runner-guide) now tells the runner to act on them.
+- On a table-chat turn (`@familiar …`), images stay on request whatever the mode, and none are made for NPC turns Familiar plays.
+- Every generated image, track and sound bills the GM's own keys (fal.ai, ElevenLabs and so on). If the GM turned a mode to Automatic, they accepted that cost. Don't switch one on yourself.
+- `voiceCueMode` has no "off" value, only `on-request` and `automatic`. If a player asks for no voices, set it to `on-request` and note in the Pickup that it should go back to automatic.
 
 ## Gotchas that have bitten real tables
 
