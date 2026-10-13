@@ -19,6 +19,7 @@ A pretty perspective illustration isn't a playable map. If the table plays on ma
 2. The adventure's own maps: extract them from the PDF at full resolution (for example `pdfimages -png` or render the page). Upload to a **Foundry-served** path and use `create-scene { background }`. A local `C:\…` path won't load in the browser.
 3. Compendium/module scenes if the adventure ships as a Foundry module.
 4. Only then generate: `generate-scene` (spends the GM's image credit). Prompt it with the source's layout facts, read the returned `backgroundMapping`, and **look at the image** before placing anything.
+   Prompt shape that works: a **style line** reused for every map in the campaign (`Top-down 90° battle map, flat hand-drawn cartoon style, soft matte pastel palette, bold dark ink outlines on terrain edges, cel shading, minimal texture. No grid`), then a **content paragraph** naming every feature the adventure uses by compass position (`a stone toll arch across the road in the east; a dry riverbed under a short bridge in the west`) and the scene's real grid size in squares, ending `Open playable ground everywhere`, then the style line again and "no grid lines, text, creatures or border". Never put the game's name in the style line: the model paints it as a title.
 
 ## Geometry
 
@@ -61,6 +62,9 @@ A pretty perspective illustration isn't a playable map. If the table plays on ma
 ## Audio (if the table wants it)
 
 Use the GM's playlists or permitted packs (`search-playlists`, `search-ambience`). Stage, don't play: note in Prep which ambience fits which scene, and let the runner start it on arrival. Avoid overlapping loops. Generated sound effects post a public chat card describing them, so keep them spoiler-free.
+
+- **Music from playlists, not generation.** `search-ambience` finds tracks by playlist and track name, so packs with loop versions named by mood (tavern, tension, combat) work best. Note a mood and a combat track per scene in Prep.
+- **Ambience and one-shots: make once, reuse.** If the GM wants generated sound, `generate-sound-effect` with `loop: true, placement: "playlist"` files a 15–22 s loop in "Familiar Ambience", where `search-ambience` finds it next time; one-shots run 3–5 s. Name 3–4 separate sounds rather than a mood (`warm tavern interior, low crowd murmur, clinking mugs, crackling hearth, a lute playing softly`), say what to leave out (`no music, no voices, no thunder cracks`), and use `steady` or `constant` for loops; dramatic sounds belong in one-shots. Set loud loops to about 20% so they sit under the music.
 
 ## Scene readiness record
 

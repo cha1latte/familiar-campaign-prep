@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.3 (2026-10-13)
+
+- Scene production: a battle-map prompt shape for `generate-scene` (shared style line, features by compass position with the real grid size, style line again); music from playlists rather than generated; ambience loops and one-shots made once and reused, with prompt rules (layered sounds, say what to leave out, "steady" for loops, about 20% volume).
+- Runner Guide template: a Fights line (before round 1, a personality and two sample lines per talking NPC; one spoken sentence after a notable action, mostly round 1; never lines for the player's character).
+
 ## 2.2.2 (2026-10-07)
 
 - Familiar 2.26's **Automatic** image, music, sound-effect and playlist modes are permission for the AI GM, not triggers. An outside assistant (Claude, Codex) sees them only in `get-world-info`, and in a live session it ignored them: no picture, sound or new music unless the player asked. New section in `familiar-facts.md`, and a Media line in the Runner Guide template telling the runner to act on whatever is set to Automatic.
