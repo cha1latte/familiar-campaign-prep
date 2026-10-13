@@ -18,8 +18,9 @@
 ```text
 📁 Frozen Offerings (GM)
    📕 Start Here     ← your AI GM reads this every session
-        Runner Guide · Pickup · Table Profile · Adaptations · Trackers · Session Log
+        Runner Guide · Pickup · Table Profile · Adaptations · Trackers · Session Log · Table Changes
    📗 Source         ← the adventure's own text, section by section, checked against the PDF
+   📒 Section Cards  ← each section's must-hold rules (DCs, NPC knowledge, rewards), checked before every ruling
    📘 Prep 1, 2…     ← runnable notes: NPC knowledge, clue routes, fight setups, token positions
 🗺️  The adventure's own battle maps, staged and ready (walls and lights where they matter)
 🧝 Sidekicks and monsters built from the book's stat blocks and checked number by number
@@ -27,6 +28,8 @@
 ```
 
 When you stop for the night, the AI GM saves where you are. Next time, *"hi, let's play"* is enough: it reads the notes, recaps and waits for you.
+
+Mid-session, it checks the current section's card before any DC, NPC answer or reward instead of guessing. When you agree to change something from the book ("let's say the guard is asleep"), it writes that on *Table Changes*, kept apart from the book, so it isn't forgotten and the book isn't quietly rewritten.
 
 ## How it works
 

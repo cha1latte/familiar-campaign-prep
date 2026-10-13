@@ -81,6 +81,25 @@ Before saving, walk five attempts through your notes, using only what's written:
 
 Wherever you had to invent a central answer during the walk-through, add it to the prep (marked *new*) and walk it again. Reject prep that lists only intentions ("add a clue here"), hangs on one indispensable roll, or gives an NPC knowledge they couldn't have.
 
+## Section cards: the book's rules for each section
+
+Prep pages are for running a scene well. Section cards are for not drifting from the book while running it. For every section in the stretch you prepped, write a card in `<Title>: Section Cards` (template: [Journal layout § Section card](journal-layout.md#section-card)):
+
+1. **Copy, don't summarise.** Every DC, number, time, trigger, reward, exit and NPC knowledge limit on the card comes from the Source page word for word. Check them by script where you can: pull each number and name off the card and find it in the Source page. A card that disagrees with its Source page is worse than no card.
+2. **Under about 1,500 characters.** If a section won't fit, split it the way the Source pages are split. Context and colour stay in Prep.
+3. **List what's not in the book.** Gaps you found while prepping (the DC the book forgot, a reward with no amount) go on the *Not in the book* line, so the runner asks instead of inventing. If you and the GM settle one now, it becomes an Adaptation instead.
+4. **Point at the changes.** Name the Adaptations entries that touch this section. Never fold a change into the card's book lines.
+5. **Existing cards:** audit them against Source rather than rewriting, and update the *Table changes here* line.
+
+## File the table's changes
+
+Before writing new prep, read *6 Table Changes*. For each line, check the chat log shows the approval it claims. Then:
+- add it to *Adaptations* as a numbered entry (book / we do / why / approved by, session);
+- add that number to the section card's *Table changes here* line;
+- reset *Table Changes* to "None since <date>".
+
+A line with no approval in the chat log goes to the GM as a question. Don't file it, and don't delete it.
+
 ## Save and link
 
-Write the prep pages to `<Title>: Prep <segment>`. Update the Pickup's *Read next* line to name them, and the Runner Guide's page index to list their IDs. Read everything back.
+Write the prep pages to `<Title>: Prep <segment>` and the cards to `<Title>: Section Cards`. Update the Pickup's *Position* line to name the current card and its *Read next* line to name the prep pages, and add every new page and card ID to the Runner Guide's index. Read everything back.

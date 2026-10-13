@@ -1,6 +1,6 @@
 ---
 name: foundry-familiar-campaigns
-description: Use when setting up, preparing, continuing or auditing a tabletop campaign in Foundry VTT through Familiar. Covers finding or importing a premade adventure (PDF, module, notes), building its journals, scenes and actors, writing the playing AI's Table Rules, end-of-session summaries, next-session prep, resuming play, and repairing drift from the original adventure. Not for running a live combat turn or a quick rules question.
+description: Use when setting up, preparing, continuing or auditing a tabletop campaign in Foundry VTT through Familiar. Covers finding or importing a premade adventure (PDF, module, notes), building its journals, scenes and actors, writing the playing AI's Table Rules, end-of-session summaries, next-session prep, resuming play, keeping the AI GM on the book mid-session (section cards, table-approved changes kept apart from the book), and repairing drift from the original adventure. Not for running a live combat turn or a quick rules question.
 ---
 
 # Foundry + Familiar Campaigns
@@ -33,7 +33,8 @@ Four rules shape everything below:
 | To end tonight's session / "save where we are" | **Closeout** | [Closeout and resume](references/closeout-and-resume.md) |
 | To pick up where they left off | **Resume** check | [Closeout and resume](references/closeout-and-resume.md) |
 | A map, scene, token or actor fixed or made | Scene work only; skip the rest | [Scene production](references/scene-production.md) |
-| "Why did the AI get X wrong?" / drift audit | Trace source → prep → rules → reply | [Source intake § Drift audit](references/source-intake.md#drift-audit) |
+| "Why did the AI get X wrong?" / drift audit | Trace source → card/prep → rules → reply | [Source intake § Drift audit](references/source-intake.md#drift-audit) |
+| "The AI keeps drifting from the book mid-session" (campaign already installed) | Add section cards for the sections in reach, the Table Changes page and the new Table Rules lines; test a mid-section ruling | [Session prep § Section cards](references/session-prep.md#section-cards-the-books-rules-for-each-section), [Runner setup](references/runner-setup.md) |
 
 Match the scope. A scene request gets a scene, not a campaign overhaul. A D&D 5e adventure also uses [D&D session craft](references/dnd/session-craft.md).
 
@@ -47,8 +48,9 @@ Respect the licence. Personal-use material goes into the user's own private worl
 
 Create the standard layout from [Journal layout](references/journal-layout.md):
 
-- **`<Title>: Start Here`** (small; the playing AI reads it in full every session): *Runner Guide*, *Pickup*, *Table Profile*, *Adaptations*, *Trackers*, *Session Log*.
+- **`<Title>: Start Here`** (small; the playing AI reads it in full every session): *Runner Guide*, *Pickup*, *Table Profile*, *Adaptations*, *Trackers*, *Session Log*, *Table Changes*.
 - **`<Title>: Source`**: the original, section by section.
+- **`<Title>: Section Cards`**: one short card per section with the book's must-hold rules (checks, triggers, NPC knowledge, rewards, exits), copied exactly. The runner checks the current card before any ruling and never edits it. Changes the table approves mid-play go on *Table Changes*, and you file them into *Adaptations* at the next prep.
 - **`<Title>: Prep <segment>`**: runnable notes for the next stretch of play, with NPC knowledge cards and encounter checks, each linked back to its Source page.
 - **`<Title>: Handouts`** (optional): player-safe material the GM shows by hand.
 
@@ -62,7 +64,7 @@ Build what the table actually uses. If they play on maps: scenes for the opening
 
 ## 6. Write the playing AI's instructions
 
-Merge the compact block from [Runner setup](references/runner-setup.md) into the existing Table Rules. Read them first, keep the table's own rules, stay under the cap, write once and read back. The block names the Start Here journal (name **and** ID) and tells the runner to read the Runner Guide and Pickup at session start, use the Source pages for the section in play, and run Closeout when the player stops.
+Merge the compact block from [Runner setup](references/runner-setup.md) into the existing Table Rules. Read them first, keep the table's own rules, stay under the cap, write once and read back. The block names the Start Here journal (name **and** ID) and tells the runner to read the Runner Guide and Pickup at session start, read each section's card and Source page on arrival, check the card before rulings, record approved changes on Table Changes, and run Closeout when the player stops.
 
 ## 7. Verify
 

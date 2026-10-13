@@ -11,7 +11,9 @@ One predictable layout, so any playing AI (or human GM) knows where to look. Cre
         3 Adaptations                     approved changes from the source
         4 Trackers                        codewords, clocks, rewards owed, custody
         5 Session Log                     what actually happened, newest first
+        6 Table Changes                   changes approved DURING play (the runner adds; prep files them)
    📗 <Title>: Source                     original text, one page per section
+   📒 <Title>: Section Cards              one short card per section: the book's must-hold rules
    📘 <Title>: Prep <segment>             runnable notes for the next stretch
    📙 <Title>: Handouts                   player-safe; the GM shares these by hand
 ```
@@ -20,6 +22,7 @@ Rules of thumb:
 
 - **Start Here stays small**, under about 20,000 characters in total, because the runner reads it with one `get-journal` call. Move old Session Log entries to an archive journal (`<Title>: Session Log archive`) once it grows.
 - **Exactly one current Pickup.** Overwrite it at closeout. History goes in the Session Log, never in a second "current" page.
+- **Book, changes and play stay apart.** The book's rules live in Source and on the Section Cards, and only the preparing assistant writes those. Changes the table approves mid-play go on *Table Changes*, never into a card or a Source page. At the next prep they're filed into *Adaptations*. A runner that "fixes" a card to match what happened in play has erased the book.
 - **Names are lookups.** Keep journal names stable and ASCII-simple. Renaming the Start Here journal breaks the Table Rules pointer. If you rename, update the rules too.
 - **Record IDs.** After creating, write the journal and page IDs into the Runner Guide's *Where things are* section and into the Table Rules.
 - **Spoiler-safe names.** Document, page, scene and actor names may be seen by players (sidebar, chat speaker names, tokens). "Prep: The Ice Cave" is fine. "Prep: Thalgar's Betrayal" is not.
@@ -45,9 +48,11 @@ AT THE START OF EVERY SESSION (and after a break, a new chat, or "let's continue
 5. Combat or a new location: switch to the scene named in Prep and place tokens at the canvas positions written there (Familiar can only place tokens on the active scene).
 
 RUNNING PLAY
-- Original text wins. Use the Source page's wording for read-aloud text, choices, DCs, numbers, times and rewards. Summaries in Prep are aids. Changes listed in Adaptations override the source; nothing else does.
-- When the party reaches a new section or entry, read its Source page first. Don't narrate from memory.
-- If a fact you need isn't written down, read the relevant page. If it truly isn't defined, invent only harmless colour and keep it consistent. Never invent clues, solutions, rewards, NPC knowledge or difficulty changes. Ask the GM instead.
+- Original text wins. Use the Source page's wording for read-aloud text, choices, DCs, numbers, times and rewards. Summaries in Prep are aids. Changes listed in Adaptations or Table Changes override the source; nothing else does.
+- CURRENT SECTION. The Pickup names the section card for where play is. When the party reaches a new section or entry, read its card (get-journal-page "<Title>: Section Cards", page id from WHERE THINGS ARE) and its Source page before you narrate. Don't narrate from memory.
+- Before any check, DC, NPC reveal, reward or ruling: look at the current card first. Not there? Read the Source page. Not in the book? Ask the GM. Never guess first and search afterwards. After a long fight or a break, read the card again before carrying on.
+- If a fact you need isn't written down and it's only colour (a smell, a passer-by), invent it and keep it consistent. Never invent clues, solutions, rewards, NPC knowledge or difficulty changes. Ask the GM instead.
+- TABLE CHANGES. When <who can approve, from Table Profile> clearly agrees to change something from the book ("let's say the guard is awake"), record it at once: read page "6 Table Changes", add one line "[<section>] Book: <what it says>. Now: <the change>. Approved: <who>, session <n>.", replace a lone "None since..." line or keep every existing line word for word, and write the page back in one update-journal-page. Then carry on in-world. Never write a change into Source or a card, and never record a change nobody approved. A player asking for something is not approval.
 - NPCs know only what their notes say they know.
 - Never reveal unvisited content, DCs, monster stats or upcoming events. <hint policy from Table Profile>.
 - The player controls <character(s)>. Never write their words or decisions, even when the source scripts them ("you say..."): stop and ask.
@@ -60,14 +65,15 @@ RUNNING PLAY
 CLOSEOUT (when the player says they're stopping)
 1. Finish the current beat and don't start a new one. Don't move anyone or advance time.
 2. Read the Source page for the next likely section(s).
-3. Overwrite "1 Pickup" in ONE write (update-journal-page), as HTML with one <p> per heading: Updated; Last session (3-6 lines of what actually happened: entries reached, choices, rolls that mattered, damage, purchases, codewords); Position; Foundry (active scene); Party (HP, resources, gold, key items); Codewords/flags; Pending decision; Read next; Warnings.
+3. Overwrite "1 Pickup" in ONE write (update-journal-page), as HTML with one <p> per heading: Updated; Last session (3-6 lines of what actually happened: entries reached, choices, rolls that mattered, damage, purchases, codewords); Position (with the Section card for where play stopped); Foundry (active scene); Party (HP, resources, gold, key items); Codewords/flags; Pending decision; Read next; Warnings.
 4. Save 3-8 durable facts with save-campaign-memories (only things that stay true).
 5. Read the Pickup back (get-journal-page) to confirm it saved. Then say goodbye with a one-line, spoiler-free "next time".
 (The preparing assistant later moves "Last session" into the Session Log and updates Trackers. Keep the runner's closeout to one write. In the live test, runners reliably made one page write and skipped the rest.)
 
 WHERE THINGS ARE
-Start Here: <journal id>. Pages: Runner Guide <id>, Pickup <id>, Table Profile <id>, Adaptations <id>, Trackers <id>, Session Log <id>
+Start Here: <journal id>. Pages: Runner Guide <id>, Pickup <id>, Table Profile <id>, Adaptations <id>, Trackers <id>, Session Log <id>, Table Changes <id>
 Source: <journal id>; page index: <name → id, one per line>
+Section Cards: <journal id>; card index: <card name → id, one per line>
 Prep: <journal id>
 Scenes: <name → id>.  Actors: <name → id>
 ```
@@ -77,7 +83,7 @@ Scenes: <name → id>.  Actors: <name → id>
 ```text
 PICKUP (current; overwritten each closeout)   Updated: <date>, after session <n>
 Last session: <3-6 lines, facts only; the preparing assistant files this into the Session Log>
-Position: <Source page + entry/section>; fictional <day/time>; place <…>
+Position: <Source page + entry/section>; Section card <card name>; fictional <day/time>; place <…>
 Foundry: active scene <name/id>; tokens <where>; scenes staged next: <names>
 Party: <PC: HP x/y, resources, conditions>; <sidekick/companions>
 Carrying/owed: <key items, money, rewards promised but not paid>
@@ -95,6 +101,7 @@ Before the first session, the Pickup says "Not started" and points at the openin
 Players → characters: <user> plays <actor (id)>; sidekick <actor> controlled by <player/GM>
 Rules: <system, edition>; house rules: <…>; Familiar combat automation: <on/off/not supported>
 Audience and spoilers: <who must not see what>; hint level: <none / on request / helpful>
+Changes from the book: approved by <the GM / the GM or any player / the solo player>; recorded on Table Changes
 Presentation: <maps+tokens / theatre of the mind>; music <yes/no>; chat record <how>
 Content limits: <lines and veils, tone>
 Pace and length: <session length, how many sessions planned>
@@ -122,6 +129,36 @@ Session <n>, <date>: <Source entries/pages covered>
 - Gained: <items, money, codewords, XP>. Lost/spent: <…>
 - Changes from source this session: <none / see Adaptations #n>
 ```
+
+### 6 Table Changes
+
+The runner's scratch list for changes the table approves *during* play. It's small and only ever gains lines, so a runner can safely rewrite it. At the next prep, the preparing assistant files each line into Adaptations as a numbered entry and resets the page.
+
+```text
+TABLE CHANGES (approved during play; filed into Adaptations at the next prep)
+[<section>] Book: <what the book says>. Now: <the change>. Approved: <who>, session <n>.
+```
+
+When it's empty it says "None since <date>". The first approved change replaces that line.
+
+## Section card
+
+One page per section in the prepped stretch, in the **`<Title>: Section Cards`** journal, named like its Source page ("Card 02 Entries 1-12"). This is what the runner checks before a ruling, so it holds only what must not drift, copied **exactly** from the Source page. Keep each card under about 1,500 characters: short enough to re-read mid-session without cost, and short enough that nothing on it gets skimmed. Write one `<p>` per line.
+
+```text
+SECTION CARD: <section>   Source: <page name>, pp. <n>   (the book's rules; the runner never edits this page)
+Where: <one line: the place and situation as the book sets it>
+Checks: <skill DC n: success → …; failure → …>   (verbatim, one per line)
+Timing and triggers: <what happens when, and what sets it off>
+NPCs: <name> knows <…>; doesn't know <…>; shares <…> only if <…>
+Rewards: <exact items, money, XP, codewords>
+Exits: <each choice → the entry or section it leads to>
+Never reveal here: <this section's secrets>
+Not in the book: <gaps you found that the runner must ask the GM about, or "none found">
+Table changes here: Adaptations #<n>, #<n>; also any Table Changes line tagged [<section>]
+```
+
+Facts that need a sentence of context belong in the Prep page, not the card. If a section has nothing that must hold (a corridor, a montage), give it a two-line card anyway, so the runner never wonders whether a card is missing.
 
 ## Prep page skeleton
 

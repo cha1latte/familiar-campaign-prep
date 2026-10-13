@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.3.0 (2026-10-13)
+
+**Keeping a premade adventure on track mid-session**
+- **Section cards**: a new `<Title>: Section Cards` journal, one short card per section (under about 1,500 characters) with the book's must-hold rules copied exactly: checks and DCs, timing and triggers, what each NPC knows and will share, rewards, exits, what not to reveal, and the gaps the book leaves. The Pickup names the current card. The runner reads it on arrival and checks it before any DC, NPC reveal, reward or ruling (card, then Source, then ask the GM), instead of guessing first and searching after.
+- **Table Changes**: a new Start Here page for changes the table approves during play, one tagged line each, written by the runner in one write. Only who the Table Profile names can approve; a player's request isn't approval. The preparing assistant checks each line against the chat log and files it into Adaptations at the next prep. Cards and Source are never edited in play.
+- Table Rules block (about 1,400 characters filled in), Runner Guide, prep, closeout audit, drift audit and verification updated to match, with three new behaviour checks: a mid-section ruling, a GM-approved change, and a player-only request.
+- **Tested** live (Foundry 14, Familiar 2.26, Opus 5.5 over MCP, a made-up adventure, 2 runs with the 2.2.3 rules and 2 with these): with cards, the runner read the card before answering, ruled the check exactly as the card said, recorded the GM's change as one tagged Table Changes line without touching the card or Source, and asked the GM about a player-only request. The 2.2.3 runs also kept to the book in these short sessions, so the card rules guard long sessions rather than fix a failure seen in testing.
+
 ## 2.2.3 (2026-10-13)
 
 - Scene production: a battle-map prompt shape for `generate-scene` (shared style line, features by compass position with the real grid size, style line again); music from playlists rather than generated; ambience loops and one-shots made once and reused, with prompt rules (layered sounds, say what to leave out, "steady" for loops, about 20% volume).

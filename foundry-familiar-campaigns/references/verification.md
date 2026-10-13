@@ -10,6 +10,7 @@ Each claim needs its own evidence. Never roll them up into "all working".
 |---|---|
 | Source imported | Inventory written; next-session sections compared against page images; skipped or sampled parts listed |
 | Prep is faithful | Every consequential fact in the opening prep (times, numbers, DCs, NPC knowledge, rewards) traced to its Source page; adaptations listed |
+| Section cards match the book | Every number, name and exit on each card found in its Source page (by script where possible); each card under about 1,500 characters; card names spoiler-safe; the Pickup names the current card |
 | Prep is runnable | The five-attempt walk-through in [Session prep](session-prep.md#review-it-by-trying-to-run-it) passes with no invented central answers |
 | Journals saved | Every page read back: right journal, full length, no truncation; IDs recorded in the Runner Guide |
 | Private stays private | Journals GM-only (default); no secrets in names, chat, memories or handouts |
@@ -31,6 +32,9 @@ If you can test the playing AI on a copy of the world or at a moment the GM choo
 | "hi, let's play" (fresh chat) | Reads Start Here and the Source page first; recaps; waits |
 | "what's in the next room?" (before entering) | Describes only what's perceivable; no spoilers |
 | A sensible plan the source didn't foresee | A fair ruling, recorded; no railroading back to the script |
+| Mid-section, a question the card answers ("what's the DC to climb the wall?", "does the miller know about the cellar?") | Tool log shows the card read *before* the reply; the answer matches the card; no DC revealed if the hint level forbids it |
+| The GM approves a change ("ok, let's say the guard is asleep") | One write to *Table Changes* with the section tag and who approved; Source and the card unchanged; play carries on in-world |
+| The player alone asks for a change at a table where only the GM approves | No write; the runner asks the GM |
 | Fails an important check | Consequence from the source; the fact still exists; another route remains |
 | "ok I attack" with an enemy out of reach | Moves first or says it can't reach; no free hit |
 | "let's stop for tonight" | Runs closeout: Pickup, Log and Trackers updated and read back |
@@ -43,6 +47,8 @@ After a session or two, look at the chat log and the records together:
 - Did the runner read the source at each new section (tool log), and did the narration match it?
 - Did choices matter? Were the source's alternatives honoured, and off-script ideas handled fairly?
 - Did NPCs stay within their knowledge?
+- Did the runner check the card before rulings, or answer first and look it up after being challenged?
+- Is every change the table agreed to on *Table Changes*, and nothing it didn't?
 - Were rolls, HP, items and rewards each handled exactly once?
 - Did closeout leave a Pickup that a fresh chat could run from?
 

@@ -4,24 +4,29 @@ The playing AI gets two things automatically: the Table Rules, on every turn, an
 
 ## The Table Rules block
 
-Fill in the angle-bracket fields with **real** names and IDs, after you've created the journals. The block is about 1,250 characters, leaving room for the table's own rules inside the 3,000 cap.
+Fill in the angle-bracket fields with **real** names and IDs, after you've created the journals. Filled in, the block is about 1,400 characters, leaving room for the table's own rules inside the 3,000 cap.
 
 ```text
 CAMPAIGN: <Title> (<system>). Campaign notes are in the Foundry journal named "<Title>: Start Here" (look it up by that exact name; id <journalId> is a backup).
 - Session start, a new chat, after a break, or "let's continue": read that journal in full (get-journal) BEFORE replying, then the Source/Prep pages its Pickup names (get-journal-page). Recap and stop at the pending decision. A greeting is not an action.
-- New section or entry: read its Source page first. The original text wins over summaries; only the Adaptations page may change it.
-- Don't invent clues, answers, rewards, NPC knowledge or difficulty. If it isn't written, look it up or ask the GM.
+- New section or entry: read its card in "<Title>: Section Cards" and its Source page first. The original text wins over summaries; only Adaptations and Table Changes may change it.
+- Before any DC, NPC reveal, reward or ruling, check the current card, then Source, then ask the GM. Don't guess first. Don't invent clues, answers, rewards, NPC knowledge or difficulty.
+- When the GM approves a change from the book, add it to the "6 Table Changes" page right away (one write). Never edit Source or a card.
 - No spoilers: never reveal unvisited content, DCs, stats or upcoming events. Never write the player character's words or decisions, even when the book scripts them.
 - Post only in-world narration, NPC dialogue and direct answers. Never narrate your own tool use.
 - When the player stops for the session: run CLOSEOUT from the Runner Guide (one Pickup write including "Last session", then memories, then read back) before saying goodbye.
 ```
 
-Every line here earned its place in the live test:
+Most lines here earned their place in the live test:
 
 - *Look it up by name.* The playing AI mistyped a 16-character ID (it dropped a `0`) and had to search to recover. Names are sturdier, so give the ID as a backup.
 - *Never write the player character's words.* Gamebooks script "you say…" lines, and the runner copied two of them until this line was added.
 - *Never narrate your own tool use.* Without it, "Now let me read the Backstory…" went into public chat.
 - *One Pickup write.* Asked for three page writes, the runner did one.
+- *Check the card before a ruling.* Tables report AI GMs drifting from the book mid-session: answering a DC or an NPC question from memory, then searching only after a player objects. A short card per section, checked first, keeps the book's numbers in front of them. In a short live test (Opus over MCP, 4 turns) the runner already followed the book without cards, so this line guards long sessions and weaker models; it doesn't fix a failure seen in testing.
+- *Table Changes, not Adaptations.* The runner may rewrite a page from a plain-text read. That's safe for a short list it only adds to, and not for the curated Adaptations ledger, so mid-play changes go on their own page and the preparing assistant files them. Without the page, test runners wrote GM-approved changes straight into Adaptations, once adding a detail the GM never said.
+
+If your table lets players approve changes (a solo game, where the player is also the GM), replace "the GM approves" with "the player approves" in the block and set the same in the Table Profile.
 
 Optional single lines, added only if the table wants them:
 

@@ -75,15 +75,17 @@ Separate four things: the publisher's own alternatives, deliberate adaptations, 
 When the playing AI said something that doesn't match the adventure, trace one fact through every layer and find the **first** layer where it went wrong:
 
 ```text
-Original page → Source journal page → Prep page → Table Rules / Runner Guide → what the runner actually read (tool log) → its reply → saved state
+Original page → Source journal page → Section card / Prep page → Adaptations / Table Changes → Table Rules / Runner Guide → what the runner actually read (tool log) → its reply → saved state
 ```
 
 | Where it broke | Typical cause | Fix |
 |---|---|---|
 | Source journal | Extraction error, missing section | Re-extract and re-check that section |
+| Section card | Number copied wrong, fact missing, or a played change written over the book line | Fix the card from Source; move any change to Adaptations |
 | Prep | Summary dropped or changed the fact | Fix the prep and add the exact fact |
+| Changes | A table change applied to the wrong section, or used without being recorded | File it properly, tagged with its section; ask the GM about anything unrecorded |
 | Rules / Runner Guide | The runner wasn't told to read the source | Tighten the read rule |
-| Retrieval | The runner never called `get-journal-page`; it relied on excerpts | Fix the pointer and test with a fresh chat |
+| Retrieval | The runner never called `get-journal-page`; it relied on excerpts. Or it answered first and read the card only after being challenged | Fix the pointer and test with a fresh chat; for "guess, then search", test a mid-section ruling (see [Verification](verification.md#quick-behaviour-checks)) |
 | Reply | Read correctly, invented anyway | Note it. Flag it to the GM; adjust the rules wording only if it repeats |
 | Saved state | Narrated but not saved, or saved twice | Repair from the chat record; never replay the event |
 
