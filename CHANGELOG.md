@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.4.0 (2026-11-06)
+
+**The three gates**
+- New in Verification: **the three gates**, *Is it fun?*, *Is it D&D?* and (Teach) *Does it really teach?*, each scored out of 10 from the player's chair, 8.5 minimum, with the caps that sink a session regardless of the rest. Scored from a transcript (the real session log, or a simulated playthrough with a book-blind player agent), never from prep alone; one cold judge per gate; fix the lowest criterion at its root and loop. The real player overrules the judges.
+- New job in the job table: "it isn't fun / doesn't feel like D&D / I'm not learning anything" runs the gates on the session log. For a premade adventure the fixes go in prep, section cards, re-budgeted fights for the real party and GM-approved Table Changes, not a rewrite of the book; for an original or Campaign Writer package, fix the design.
+- The Verify step lists the gates for anything you designed or adapted. The full rubric and the simulated-playthrough method live in Campaign Writer's `three-gates.md`.
+
 ## 2.3.0 (2026-10-13)
 
 **Keeping a premade adventure on track mid-session**

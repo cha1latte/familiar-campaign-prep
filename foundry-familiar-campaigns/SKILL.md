@@ -34,6 +34,7 @@ Four rules shape everything below:
 | To pick up where they left off | **Resume** check | [Closeout and resume](references/closeout-and-resume.md) |
 | A map, scene, token or actor fixed or made | Scene work only; skip the rest | [Scene production](references/scene-production.md) |
 | "Why did the AI get X wrong?" / drift audit | Trace source → card/prep → rules → reply | [Source intake § Drift audit](references/source-intake.md#drift-audit) |
+| "It isn't fun" / "it doesn't feel like D&D" / "I'm not learning anything", or before handing over an original or Teach campaign | Run the **three gates** on the real session log (or a simulated playthrough), cold-judged, 8.5 minimum each; fix at the root and re-run | [Verification § The three gates](references/verification.md#the-three-gates) |
 | "The AI keeps drifting from the book mid-session" (campaign already installed) | Add section cards for the sections in reach, the Table Changes page and the new Table Rules lines; test a mid-section ruling | [Session prep § Section cards](references/session-prep.md#section-cards-the-books-rules-for-each-section), [Runner setup](references/runner-setup.md) |
 
 Match the scope. A scene request gets a scene, not a campaign overhaul. A D&D 5e adventure also uses [D&D session craft](references/dnd/session-craft.md).
@@ -73,6 +74,7 @@ Use the readiness checks in [Verification](references/verification.md). At minim
 - Every document you wrote reads back intact, with no truncation and nothing missing.
 - The opening section passes a "could another GM run this without inventing its answers?" review.
 - Scenes render. A screenshot shows the map, tokens and lighting. Players can see what they should, and nothing they shouldn't.
+- **The three gates**, for anything you designed or adapted (an original campaign, a Teach campaign, heavy table changes): Is it fun? Is it D&D? Does it really teach? Each 8.5 or better from the player's chair, judged from a playthrough. See [Verification § The three gates](references/verification.md#the-three-gates).
 - **Handoff.** If you're allowed to test the playing AI, a plain "hi, let's play" in a fresh chat should make it read Start Here and the opening Source page, recap without spoilers, and wait. Inspect the actual tool calls (table chat leaves a GM-only receipt listing them) and the reply. If you can't test it, the honest status is *"Prep saved; handoff not verified."*
 
 ## 8. Hand over
